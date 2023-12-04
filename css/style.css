@@ -1,0 +1,275 @@
+body {
+    margin: 0px;
+    background-color:#201c1c
+}
+
+nav {
+    border: 1px solid rgba(128, 128, 128, 0.247);
+    background-color: #131010;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-right: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+a {
+    font-family: 'Encode Sans';
+    font-size: 18px;
+    color: #FFFDD0;
+}
+
+nav a {
+    text-decoration: none; 
+    border: 1px solid rgba(128, 128, 128, 0.247);
+    font-size: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+h1 {
+    font-family: 'Source Code Pro';
+    font-size: 50px;
+    color: #FFFDD0;
+    margin: 5px;
+}
+
+h2 {
+    font-family: 'Source Code Pro';
+    font-size: 28px;
+    color: #2282ba;
+    margin: 10px;
+}
+
+p {
+    font-family: 'Encode Sans';
+    font-size: 18px;
+    color: #FFFDD0;
+    margin: 5px;
+}
+
+img {
+    border-style: solid;
+    border-width: 10px;
+    border-color: #131010;
+    border-radius: 50px;
+}
+
+input {
+    font-family: 'Encode Sans';
+    border:#131010 solid 8px;
+    background-color: #FFFDD0;
+    border-radius: 10px;
+    width: 50%;
+    margin: 5px;
+}
+
+label {
+    display: block;
+    font-family: 'Source Code Pro';
+    font-size: 28px;
+    color: #2282ba;
+    margin: 10px;
+}
+
+.currentItem {
+    background-color: #201c1c;
+    text-decoration: underline;
+    text-decoration-color: #2282ba;
+    text-decoration-thickness: 3px;
+    border-bottom: none;
+}
+
+#mainImg {
+    display: block;
+    margin: auto;
+}
+
+#titleHi {
+    color: #2282ba;
+}
+
+#titleName {
+    color: rgb(175, 101, 32);
+}
+
+#dungeonCrawlerImg {
+    display: block;
+    height: 500px;
+    margin: auto;
+}
+
+#graph {
+    display: block;
+    height: 220px;
+    margin: auto;
+}
+
+#graph:hover {
+    transform:scale(1.5);
+}
+
+#payloadImg {
+    display: block;
+    height: 440px;
+    margin: auto;
+}
+
+#contactMe {
+    display: block;
+    color: rgb(175, 101, 32);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#send {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 100px;
+    font-size: 20px;
+}
+
+#message {
+    width: 80%;
+}
+
+#socials {
+    display: block;
+    margin: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        align-items: center;
+    }
+    
+    .gridText {
+        margin-right: 10%;
+    }
+
+    .projectsGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 0px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .projectColumn {
+        margin: 0;
+        padding: 5px;
+        border: solid #131010 5px;
+        border-radius: 20px;
+    }
+
+    .contactGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    p {
+        font-size: 16px;
+    }
+    #titleName {
+        overflow: hidden;
+        border-right: 2px solid #FFFDD0;
+        margin: 0 auto;
+        white-space: nowrap;
+        animation: typeWriter 3.5s steps(40, end), mouse .75s step-end infinite;
+    }
+    
+    #mainImg {
+        margin-left: 30%;
+        position: relative;
+        animation-name: headshotAnimation;
+        animation-duration: 5s;
+    }
+
+    #titleHi {
+        position: relative;
+        animation: hiAnimation;
+        animation-duration: 5s;
+    }
+
+    #aboutText {
+        overflow: hidden;
+        position: relative;
+        animation: hiAnimation;
+        animation-duration: 6s;
+        font-size: 18px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        align-items: center;
+    }
+    
+    .gridText {
+        margin-right: 10%;
+    }
+
+    .projectsGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 0px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .projectColumn {
+        margin: 0;
+        padding: 5px;
+        border: solid #131010 5px;
+        border-radius: 20px;
+    }
+
+    .contactGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@keyframes headshotAnimation {
+    0%      {left: -100%;}
+    100%    {left: 0%;}
+}
+
+@keyframes hiAnimation {
+    0%      {right: -125%;}
+    100%    {right: 0%;}
+}
+
+@keyframes typeWriter {
+    from {width: 0%;}
+    to   {width: 100%;}
+}
+
+@keyframes mouse {
+    from, to {border-color: transparent;}
+    50%      {border-color: #FFFDD0}
+}
