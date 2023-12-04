@@ -114,7 +114,7 @@ label {
     margin: auto;
 }
 
-#graph:hover {
+.graph:hover {
     transform:scale(1.5);
 }
 
